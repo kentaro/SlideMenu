@@ -21,8 +21,11 @@
 
 - (NSString *)segueIdentifierForIndexPathInLeftMenu:(NSIndexPath *)indexPath
 {
+    NSString *identifier;
     NSInteger index = [indexPath row];
-    return [NSString stringWithFormat:@"content%ld", (long)index];
+
+    identifier = [NSString stringWithFormat:@"content%ld", (long)index];
+    return identifier;
 }
 
 @end
